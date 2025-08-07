@@ -1,0 +1,138 @@
+<section id="projects" style="padding: 50px 20px; background: #0f172a;"> <!-- Dark Slate Background -->
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: #38bdf8;">🚀 My Projects</h2>
+
+    <!-- Category: Machine Learning -->
+    <h3 style="margin-top: 40px; color: #facc15;">🧠 Machine Learning Projects</h3>
+    <div class="project-grid">
+      <div class="project-card" onclick="openProject('Customer Segmentation using RFM Analysis')">
+        <img src="images/Customer Segmentation using RFM Analysis.jpg" alt="Customer Segmentation">
+        <p>Customer Segmentation using RFM Analysis</p>
+      </div>
+      <div class="project-card" onclick="openProject('Loan Approval Prediction using Logistic Regression')">
+        <img src="images/Loan Approval Prediction using Logistic Regression.png" alt="Loan Approval">
+        <p>Loan Approval Prediction using Logistic Regression</p>
+      </div>
+      <div class="project-card" onclick="openProject('Diabetes Prediction using SVM')">
+        <img src="images/Diabetes Prediction using SVM.jpg" alt="Diabetes Prediction">
+        <p>Diabetes Prediction using SVM</p>
+      </div>
+      <div class="project-card" onclick="openProject('Titanic Survival Prediction (ML Basics)')">
+        <img src="images/Titanic Survival Prediction (ML Basics).png" alt="Titanic">
+        <p>Titanic Survival Prediction (ML Basics)</p>
+      </div>
+      <div class="project-card" onclick="openProject('Car Price Prediction using Random Forest')">
+        <img src="images/Car Price Prediction using Random Forest.webp" alt="Car Price">
+        <p>Car Price Prediction using Random Forest</p>
+      </div>
+    </div>
+
+    <!-- Category: Deep Learning -->
+    <h3 style="margin-top: 40px; color: #facc15;">🤖 Deep Learning Projects</h3>
+    <div class="project-grid">
+      <div class="project-card" onclick="openProject('SVHN Digit Classification using CNN')">
+        <img src="images/SVHN Digit Classification using CNN.png" alt="SVHN">
+        <p>SVHN Digit Classification using CNN</p>
+      </div>
+      <div class="project-card" onclick="openProject('Cats vs Dogs Image Classification (CNN)')">
+        <img src="images/Cats vs Dogs Image Classification (CNN).jpg" alt="Cats vs Dogs">
+        <p>Cats vs Dogs Image Classification (CNN)</p>
+      </div>
+      <div class="project-card" onclick="openProject('Expression Classification using ExpW Dataset')">
+        <img src="images/Expression Classification using ExpW Dataset.png" alt="Expression">
+        <p>Expression Classification using ExpW Dataset</p>
+      </div>
+      <div class="project-card" onclick="openProject('Lung Cancer Detection using CNN')">
+        <img src="images/Lung Cancer Detection using CNN.jpeg" alt="Lung Cancer">
+        <p>Lung Cancer Detection using CNN</p>
+      </div>
+    </div>
+
+    <!-- Category: NLP -->
+    <h3 style="margin-top: 40px; color: #facc15;">🗣️ NLP Projects</h3>
+    <div class="project-grid">
+      <div class="project-card" onclick="openProject('Cyberbullying Detection on Bengali Social Media Comments (XLM-RoBERTa + BiLSTM)')">
+        <img src="images/Cyberbullying Detection on Bengali Social Media Comments (XLM-RoBERTa + BiLSTM).jpg" alt="Cyberbullying">
+        <p>Cyberbullying Detection (XLM-RoBERTa + BiLSTM)</p>
+      </div>
+      <div class="project-card" onclick="openProject('Sarcasm Detection using NLP')">
+        <img src="images/Sarcasm Detection using NLP.jpeg" alt="Sarcasm">
+        <p>Sarcasm Detection using NLP</p>
+      </div>
+      <div class="project-card" onclick="openProject('Text Sentiment Analysis using LSTM')">
+        <img src="images/Text Sentiment Analysis using LSTM.jpeg" alt="Sentiment">
+        <p>Text Sentiment Analysis using LSTM</p>
+      </div>
+      <div class="project-card" onclick="openProject('Spam Email Classifier using Naive Bayes')">
+        <img src="images/Spam Email Classifier using Naive Bayes.png" alt="Spam Email">
+        <p>Spam Email Classifier using Naive Bayes</p>
+      </div>
+    </div>
+
+    <!-- Category: Computer Vision -->
+    <h3 style="margin-top: 40px; color: #facc15;">📷 Computer Vision Projects</h3>
+    <div class="project-grid">
+      <div class="project-card" onclick="openProject('YOLOv8 Car Detection on Kaggle Dataset')">
+        <img src="images/YOLOv8 Car Detection on Kaggle Dataset.jpeg" alt="YOLOv8 Car Detection">
+        <p>YOLOv8 Car Detection on Kaggle Dataset</p>
+      </div>
+      <div class="project-card" onclick="openProject('ITS-FGSM Adversarial Attack on YOLOv8')">
+        <img src="images/ITS-FGSM Adversarial Attack on YOLOv8.jpeg" alt="ITS-FGSM">
+        <p>ITS-FGSM Adversarial Attack on YOLOv8</p>
+      </div>
+      <div class="project-card" onclick="openProject('Red Swastik Stamp Detection in Forms using OpenCV')">
+        <img src="images/Red Swastik Stamp Detection in Forms using OpenCV.png" alt="Swastik Detection">
+        <p>Red Swastik Stamp Detection using OpenCV</p>
+      </div>
+      <div class="project-card" onclick="openProject('Real-time Face Mask Detection')">
+        <img src="images/Real-time Face Mask Detection.webp" alt="Face Mask">
+        <p>Real-time Face Mask Detection</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .project-card {
+    background: #1e293b;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .project-card p {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #f1f5f9;
+  }
+</style>
+
+<script>
+  function openProject(name) {
+    alert("You clicked: " + name);
+    // Optionally open a details page
+    // window.location.href = "project-details.html?title=" + encodeURIComponent(name);
+  }
+</script>

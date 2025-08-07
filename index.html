@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoaib Akhter - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body class="relative text-white min-h-screen">
+  <!-- Background video -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+    <source src="4496268-hd_1920_1080_25fps.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Background image commented out -->
+  <!-- style="background-image: url('bg.jpg');" -->
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-transparent text-white">
+    <!-- Logo / Name -->
+    <div class="text-2xl font-bold">Shoaib Akhter</div>
+
+    <!-- Navigation Links -->
+    <div class="flex space-x-8 text-lg font-medium">
+      <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+      <a href="about.html" class="hover:text-blue-400 transition">About</a>
+      <a href="projects.html" class="hover:text-blue-400 transition">Projects</a>
+      <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Left-Aligned Header -->
+  <header class="flex flex-col items-start px-10 pt-10 max-w-xl">
+    <div class="flex items-center mb-4">
+      <img src="your-profile.jpeg" alt="Shoaib Akhter" class="w-20 h-20 rounded-full mr-4 shadow-lg" />
+      <h1 class="text-4xl md:text-5xl font-bold">Shoaib Akhter</h1>
+    </div>
+
+    <!-- Typing Effect -->
+    <p class="text-xl md:text-2xl font-medium text-gray-200 mb-4 ml-20">
+      <span id="typed"></span>
+    </p>
+
+    <br />
+
+    <!-- Description Paragraph -->
+    <p class="text-yellow-400 max-w-xl ml-16 mt-4 text-base leading-relaxed">
+      I’m Shoaib Akhter, a Machine Learning Trainer and Data Scientist with a passion for solving real-world problems using AI. I’ve trained countless students at Geo Labs and worked on practical projects at Gen Code Labs. I love making complex topics simple and enjoy teaching, coding, and continuous learning.
+    </p>
+
+    <br />
+
+    <!-- Hire Me Button -->
+    <a href="mailto:youremail@example.com"
+      class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300 ml-16">
+      💼 Hire Me
+    </a>
+  </header>
+
+  <!-- Typed.js Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Typed("#typed", {
+        strings: [
+          "Ai Engineer",
+          "Data Scientist",
+          "Instructor at Geo Labs"
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true,
+      });
+    });
+  </script>
+</body>
+</html>
